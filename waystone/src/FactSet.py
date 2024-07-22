@@ -11,8 +11,8 @@ from fds.sdk.Formula.models import TimeSeriesRequest, TimeSeriesRequestData
 from fds.sdk.Formula.apis import TimeSeriesApi
 
 
-class FormulaDataProcessor:"C:\Working_code\waystone\src\config\config.json"
-    def __init__(self, config_file='src\config\config.json'):
+class FormulaDataProcessor:
+    def __init__(self, config_file='waystone/src/config/config.json'):
         self.config = Configuration(fds_oauth_client=ConfidentialClient(config_file))
 
     def check_health(self):
